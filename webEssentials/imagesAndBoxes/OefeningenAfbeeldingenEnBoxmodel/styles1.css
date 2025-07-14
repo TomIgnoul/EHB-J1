@@ -1,3 +1,10 @@
 .imageDesert {
   float: left;
+  width: 300px;
+}
+
+.desertBlock::after {
+  content: "";
+  display: table;
+  clear: both;
 }
