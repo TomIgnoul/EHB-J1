@@ -1,0 +1,26 @@
+* {
+  background-color: black;
+}
+
+.boxes {
+  color: white;
+}
+
+blockquote {
+  background-color: rgb(1, 48, 51);
+  border: 4px solid white;
+  width: 60%;
+  margin: 24px;
+  padding: 20px;
+}
+
+.two {
+  margin: auto;
+}
+
+.three {
+  margin-left: auto;
+  /* position: absolute;
+  right: 0;
+  margin: 2px; */
+}
