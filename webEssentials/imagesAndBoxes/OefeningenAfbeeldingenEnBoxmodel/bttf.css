@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.intro {
+  color: white;
+  background-image: url(/EHB-J1/webEssentials/imagesAndBoxes/OefeningenAfbeeldingenEnBoxmodel/images/bttf-header.jpg);
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  background-color: black;
+
+  height: 600px; /* tweak as needed */
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
+  text-align: center;
+  padding: 0 20px; /* margin on sides for mobile */
+  color: white;
+}
+
+h1 {
+  font-family: "Anton", sans-serif;
+  font-size: 100px;
+  font-weight: 75;
+  margin: 5% 13%;
+  height: 250px;
+}
+
+#introText {
+  margin: 0 10%;
+  font-size: 20px;
+}
