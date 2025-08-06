@@ -22,13 +22,13 @@ class Voertuig {
   brengTerug = () =>
     !this.getBeschikbaar()
       ? (this.getBeschikbaar(true),
-        console.log("auto is teruggebracht en is beschikbaar"))
-      : console.log("Auto was al beschikbaar");
+        console.log("Voertuig is teruggebracht en is beschikbaar"))
+      : console.log("Voertuig was al beschikbaar");
 
   verhuur = () =>
     this.getBeschikbaar()
-      ? (this.setBeschikbaar(false), console.log("auto is nu verhuurd"))
-      : console.log("auto is al verhuurd");
+      ? (this.setBeschikbaar(false), console.log("Voertuig is nu verhuurd"))
+      : console.log("Voertuig is al verhuurd");
 }
 
 // Maak een Auto subclass die extra eigenschappen heeft zoals aantalDeuren en brandstofType
@@ -39,10 +39,36 @@ class Auto extends Voertuig {
     this.aantalDeuren = aantalDeuren;
     this.brandstofType = brandstofType;
   }
+
+  verhuur = () =>
+    this.getBeschikbaar()
+      ? (this.setBeschikbaar(false), console.log("auto is nu verhuurd"))
+      : console.log("auto is al verhuurd");
 }
 
-let vt1 = new voertuig("BMW", "3serie", 2025);
+//Maak een Motor subclass met extra eigenschappen zoals cilinderinhoud en type (sport, tour, etc.)
+
+class Motor extends Voertuig {
+  constructor(merk, model, jaar, verhuurPrijs, cilinderinhoud, type) {
+    super(merk, model, jaar, verhuurPrijs);
+    this.cilinderinhoud = cilinderinhoud;
+    this.type = type;
+  }
+
+  verhuur = () =>
+    this.getBeschikbaar()
+      ? (this.setBeschikbaar(false),
+        console.log(`Motor van ${this.type} is nu verhuurd`))
+      : console.log("Motor is al verhuurd");
+}
+
+// Overschrijf de verhuur methode in beide subclasses om extra specifieke informatie in het bericht op te nemen
+
+let vt1 = new Voertuig("BMW", "3serie", 2025);
+let motor1 = new Motor("Yamaha", "R1", 2022, 150, 1000, "Sport");
 console.log(vt1.getBeschikbaar());
 vt1.verhuur();
 console.log(vt1.getBeschikbaar());
 vt1.brengTerug();
+motor1.verhuur();
+motor1.verhuur();
