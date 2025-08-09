@@ -1,12 +1,13 @@
 import { Voertuig, Auto, Motor } from "./systeem.js";
 
-const Voertuigen = {
-  Toyota: new Auto("Toyota", "Yaris", 2020, 50),
-  BMW: new Auto("BMW", "3 series", 2021, 80),
-  BYD: new Auto("BYD", "Dolphine", 2022, 70),
-};
+const Voertuigen = [];
 
-console.log(Voertuigen);
+const Toyota = new Auto("Toyota", "Yaris", 2020, 50);
+const BMW = new Auto("BMW", "3 series", 2021, 80);
+const BYD = new Auto("BYD", "Dolphine", 2022, 70);
+
+Voertuigen.push(Toyota, BMW, BYD);
+
 document.addEventListener("DOMContentLoaded", () => {
   var selectCar = document.getElementById("selectCar");
   var verhuurButton = document.getElementById("verhuurButton");
@@ -18,13 +19,27 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-let voertuigProperties = ["Merk", "Model", "Bouwjaar", "VerhuurPrijs"];
-let carDisplay = document.getElementById("carDisplay");
-let carDisplayHead = carDisplay.createTHead();
-let carDisplayRow = carDisplayHead.insertRow();
+function createTable() {
+  const carDisplay = document.createElement("table");
+  carDisplay.setAttribute("border", "1");
+  const headerRow = document.createElement("tr");
+  Object.keys(Voertuigen[0]).forEach((key) => {
+    const th = document.createElement("th");
+    th.appendChild(document.createTextNode(key));
+    headerRow.appendChild(th);
+  });
+  carDisplay.appendChild(headerRow);
 
-voertuigProperties.forEach((element) => {
-  let th = document.createElement("th");
-  th.textContent = element;
-  carDisplayRow.appendChild(th);
-});
+  Voertuigen.forEach((item) => {
+    const row = document.createElement("tr");
+    Object.values(item).forEach((value) => {
+      const td = document.createElement("td");
+      td.appendChild(document.createTextNode(value));
+      row.appendChild(td);
+    });
+    carDisplay.appendChild(row);
+  });
+  document.getElementById("carDisplay").appendChild(carDisplay);
+}
+
+createTable();
