@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 400%;
+  text-transform: uppercase;
+}
+
+/* text-shadow: h-shadow v-shadow blur-radius color; */
+
+h1.een {
+  color: white;
+  text-shadow: 7px 0px 10px #000000;
+}
+
+h1.twee {
+  background-color: black;
+  text-shadow: 0px 0px 2px white;
+}
+
+h1.drie {
+  text-shadow: -0.5em -0.5em 0px tomato;
+}
