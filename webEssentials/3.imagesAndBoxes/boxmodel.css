@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+}
+.boxes {
+  margin: 20px;
+}
+blockquote {
+  font-size: 2rem;
+  color: white;
+  border: 2px solid white;
+  padding: 2rem;
+  margin: 3rem;
+  width: 50%;
+  background-color: rgb(26, 26, 48);
+}
+
+.two {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.three {
+  margin: 10px 10px 10px auto;
+}
