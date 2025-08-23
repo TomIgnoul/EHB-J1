@@ -1,0 +1,43 @@
+body {
+  padding: 0;
+  margin: 0;
+  /* box-sizing: border-box; */
+}
+
+.nav {
+  background-color: black;
+  width: 375px;
+  margin: 3em;
+}
+
+.nav ul {
+  /* background: lime; */
+  padding: 0;
+  margin: 0;
+  border: 1px solid black;
+  border-bottom: 0;
+}
+
+.nav li {
+  /* background-color: orange; */
+  list-style: none;
+}
+
+.nav a {
+  background: white;
+  display: block;
+  padding: 1em;
+  /* margin: 2px; */
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid black;
+}
+
+.nav a:hover {
+  background: black;
+  color: white;
+}
+
+.nav .current {
+  background-color: green;
+}
