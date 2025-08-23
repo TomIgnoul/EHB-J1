@@ -3,24 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
     <title>Dit is een pagina met Dummy content</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
-    <div class="navigation">
+    <nav>
       <ul>
-        <li><a href=" #nowhere">Lorem</a></li>
+        <li>
+          <a href=" #nowhere"><span id="Lorem">Lorem</span></a>
+        </li>
         <li><a href="#nowhere">Aliquam</a></li>
         <li><a href="#nowhere">Morbi</a></li>
         <li><a href="#nowhere">Praesent</a></li>
         <li><a href="#nowhere">Pellentesque</a></li>
       </ul>
-    </div>
+    </nav>
 
     <h1>Header level 1</h1>
 
-    <p>
+    <p class="pheader1">
       <strong>Pellentesque habitant morbi tristique</strong> senectus et netus
       et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat
       vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet
@@ -29,8 +31,8 @@
       pharetra. Vestibulum erat wisi, condimentum sed,
       <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit
       eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus
-      enim ac dui. <a href="#" style="color: white">Donec non enim</a> in turpis
-      pulvinar facilisis. Ut felis.
+      enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis.
+      Ut felis.
     </p>
 
     <h2>Header Level 2</h2>
@@ -54,25 +56,24 @@
       </p>
     </blockquote>
 
-    <div class="secondHeader">
+    <div class="header2container">
       <h2>Header Level 2</h2>
-      <div class="secondHeaderText">
-        <p>
-          Pellentesque habitant morbi tristique senectus et netus et malesuada
-          fames ac turpis egestas.
-        </p>
-        <ul>
-          <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-          <li>Aliquam tincidunt mauris eu risus.</li>
-        </ul>
-        <p>
-          Pellentesque habitant morbi tristique senectus et netus et malesuada
-          fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
-          ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
-          egestas semper. Aenean ultricies mi vitae est. Mauris placerat
-          eleifend leo.
-        </p>
-      </div>
+      <p>
+        Pellentesque habitant morbi tristique senectus et netus et malesuada
+        fames ac turpis egestas.
+      </p>
+      <ul>
+        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+        <li>Aliquam tincidunt mauris eu risus.</li>
+      </ul>
+
+      <p>
+        Pellentesque habitant morbi tristique senectus et netus et malesuada
+        fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
+        ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
+        egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend
+        leo.
+      </p>
     </div>
   </body>
 </html>
