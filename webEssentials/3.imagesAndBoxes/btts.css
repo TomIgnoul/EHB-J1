@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=FAMILY_NAME:wght@WEIGHT_OR_RANGE&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Robot", sans-serif;
+  background-color: #e4efea;
+}
+
+h1,
+h2 {
+  font-family: "suez One", serif;
+}
+
+.intro {
+  background: black url(images/bttf-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 6rem 5rem;
+  text-align: center;
+  color: white;
+}
+
+.intro + p {
+  text-align: center;
+}
+
+.movie-row {
+  display: flex;
+  margin: 2rem 0;
+  padding: 1rem;
+  /* background-color: #53aa74; */
+}
+
+.movie-image img {
+  width: 300px;
+  margin-right: 1rem;
+}
+
+.movie-title h2 {
+  margin-top: 0;
+}
+
+.movie-date {
+  text-align: right;
+  color: #a1a9a2;
+}
+
+.movie-date + p {
+  text-indent: 2rem;
+}
+
+.movie-date i {
+  color: #53aa74;
+}
