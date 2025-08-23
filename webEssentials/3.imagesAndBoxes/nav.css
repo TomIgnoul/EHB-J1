@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  list-style: none;
+  width: 14rem;
+  border: solid 1px black;
+}
+
+li a {
+  display: block;
+  padding: 2rem 0 2rem 5rem;
+  border-bottom: solid 1px black;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+}
+
+/* Default backgrounds */
+#home {
+  background: orange url(icons/home.svg) no-repeat 2rem center;
+}
+
+#blog {
+  background: orange url(icons/blog.svg) no-repeat 2rem center;
+}
+
+#learning {
+  background: orange url(icons/learn.svg) no-repeat 2rem center;
+}
+
+#discuss {
+  background: orange url(icons/discuss.svg) no-repeat 2rem center;
+}
+
+/* Hover states */
+#home:hover {
+  background: black url(icons/home_over.svg) no-repeat 2rem center;
+  color: white;
+}
+
+#blog:hover {
+  background: black url(icons/blog_over.svg) no-repeat 2rem center;
+  color: white;
+}
+
+#learning:hover {
+  background: black url(icons/learn_over.svg) no-repeat 2rem center;
+  color: white;
+}
+
+#discuss:hover {
+  background: black url(icons/discuss_over.svg) no-repeat 2rem center;
+  color: white;
+}
