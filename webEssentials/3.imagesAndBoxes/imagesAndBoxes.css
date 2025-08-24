@@ -1,0 +1,61 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50vh;
+}
+
+.een {
+  border: 3px dotted black;
+  width: 18rem;
+  background-color: rgba(128, 128, 128, 0.647);
+  padding: 2rem;
+}
+
+.twee {
+  background-color: violet;
+  border-left: 1rem solid black;
+  width: 19rem;
+  padding-top: 3rem;
+}
+
+.drie {
+  width: 18rem;
+  background-color: rgba(128, 128, 128, 0.647);
+}
+
+.drie p {
+  padding: 0;
+  margin: 0;
+}
+
+.drie span {
+  background-color: orange;
+  height: 100%;
+  display: inline-block;
+  padding: 1rem;
+}
+
+.vier {
+  width: 18rem;
+  background-color: rgba(128, 128, 128, 0.647);
+  padding: 7px;
+  overflow: scroll;
+}
+.containerVijf {
+  display: flex;
+  align-items: center;
+  background-color: rgba(128, 128, 128, 0.65);
+  width: 25rem;
+}
+
+.imgdiv img {
+  display: block;
+  height: auto;
+  width: 7rem;
+}
+
+.vijf {
+  flex: 1;
+}
