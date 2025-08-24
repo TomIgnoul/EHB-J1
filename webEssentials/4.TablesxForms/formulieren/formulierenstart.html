@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h2 {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="submit" method="post">
+      <h1>basic inputs</h1>
+      <h2>text</h2>
+      <p>
+        <label>
+          Username:
+          <input
+            id="username"
+            type="text"
+            name="username"
+            size="15"
+            maxlength="30"
+          />
+        </label>
+      </p>
+      <p>
+        <label for="password"> Password</label>
+        <input
+          id="password"
+          type="password"
+          name="password"
+          size="15"
+          maxlength="30"
+        />
+      </p>
+      <!-- buttons -->
+      <h1>buttons</h1>
+      <!-- submit -->
+      <h2>submit</h2>
+      <p>
+        <label for="submitbtn">subscribe </label>
+        <input
+          type="submit"
+          id="submitbtn"
+          name="submitbtn"
+          value="subscribe"
+        />
+      </p>
+      <!-- reset -->
+      <h2>reset</h2>
+      <p>
+        <label for="resetbtn">reset button</label>
+        <input
+          type="reset"
+          id="resetbtn"
+          name="resetbtn"
+          value="reset this form?"
+        />
+      </p>
+      <!-- button -->
+      <h2>button</h2>
+      <p>
+        <button>clickme:)</button>
+      </p>
+      <!-- multiline text -->
+      <h2>multiline text</h2>
+      <textarea name="comments" cols="20" rows="4">
+geef commentaar sukketje
+      </textarea>
+      <!-- radio buttons -->
+      <h2>radio buttons</h2>
+      <p>
+        <label for="genre1">Rock</label>
+        <input type="radio" name="genre" id="genre1" value="Rock" />
+        <label for="genre2">Pop</label>
+        <input type="radio" id="genre2" name="genre" value="Pop" />
+        <label for="genre3">Jazz</label>
+        <input type="radio" id="genre3" name="genre" value="Jazz" />
+      </p>
+
+      <h2>radio button accessible</h2>
+      <fieldset>
+        <legend>your favoriet genre</legend>
+        <input type="radio" name="genre" id="genre1" value="Rock" />
+        <label for="genre1">Rock</label>
+        <input type="radio" id="genre2" name="genre" value="Pop" />
+        <label for="genre2">Pop</label>
+        <input type="radio" id="genre3" name="genre" value="Jazz" />
+        <label for="genre3">Jazz</label>
+      </fieldset>
+
+      <h2>checkboxes</h2>
+      <p>
+        <label for="checkbox1">singlecheckbox </label>
+        <input type="checkbox" name="checkbox1" id="checkbox1" value="#" />
+      </p>
+      <hr />
+      <h2>Checkbox group</h2>
+      <p>
+        your favorite group schnitsel <br />
+        <input type="checkbox" id="Tidal" name="service" value="1" /><label
+          for="Tidal"
+          >Tidal</label
+        >
+        <input type="checkbox" id="Qobuz" name="service" value="2" /><label
+          for="Qobuz"
+          >Qobuz</label
+        >
+        <input type="checkbox" id="Spotify" name="service" value="3" /><label
+          for="Spotify"
+          >Spotify</label
+        >
+      </p>
+      <hr />
+      <h2>dropdown list</h2>
+      <h3>simple dropdown</h3>
+      <select name="devices">
+        <option value="smartphone">Smartphone</option>
+        <option value="tablet">Tablet</option>
+        <option value="gameconsole">Gameconsole</option>
+        <option value="PC">Desktop Computer</option>
+      </select>
+
+      <h3>multiple dropdown</h3>
+      <select name="schnitsel1" multiple size="2">
+        <option value="guitar">guitar</option>
+        <option value="drums" selected>drums</option>
+        <option value="keys">keys</option>
+        <option value="bass" selected>bass</option>
+      </select>
+
+      <h3>optgroup</h3>
+      <label for="favcity">Which is your favorite Shitty?</label>
+      <select name="favcity2" id="favcity2">
+        <optgroup label="asia">
+          <option value="3">Delhi</option>
+          <option value="4">Hong Kong</option>
+          <option value="8">Mumbai</option>
+          <option value="11">Tokyo</option>
+        </optgroup>
+        <optgroup label="Europe">
+          <option value="1">Amsterdam</option>
+          <option value="5">London</option>
+          <option value="7">Moscow</option>
+          <option value="11">Berlin</option>
+        </optgroup>
+        <optgroup label="North America">
+          <option value="19">New york</option>
+          <option value="20">Los Angelos</option>
+          <option value="21">Texas</option>
+        </optgroup>
+      </select>
+      <h2>Datalist</h2>
+
+      <label for="browser">what is your prefered browser?</label>
+      <input type="text" list="browsers" name="browser" id="browser" />
+      <datalist id="browsers">
+        <option value="Edge">Edge</option>
+        <option value="Chrome">Chrome</option>
+        <option value="Brave">Brave</option>
+        <option value="Firefox">Firefox</option>
+      </datalist>
+    </form>
+  </body>
+</html>
