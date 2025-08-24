@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        /* /* empty-cells: hide; */
+        /* border-spacing: 10px; */
+        border-collapse: collapse;
+        caption-side: bottom;
+        width: 60%;
+      }
+      table,
+      td,
+      th {
+        border: 1px solid black;
+      }
+
+      td,
+      th {
+        padding: 0.5rem;
+      }
+
+      th {
+        text-align: left;
+      }
+
+      tr:nth-of-type(2n + 1) {
+        background-color: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Tabellen</h1>
+    <table>
+      <caption>
+        Dit is een voorbeeldtabel
+      </caption>
+      <thead>
+        <tr>
+          <th></th>
+          <th>header</th>
+          <th>header</th>
+          <th>header</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>header</th>
+          <td>1</td>
+          <td colspan="2">2</td>
+          <!-- <td>3</td> -->
+        </tr>
+        <tr>
+          <th>header</th>
+          <td rowspan="2">4</td>
+          <td>5</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <th>header</th>
+          <!-- <td>7</td> -->
+          <td>8</td>
+          <td>9</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
