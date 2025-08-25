@@ -163,6 +163,31 @@ geef commentaar sukketje
         <option value="Brave">Brave</option>
         <option value="Firefox">Firefox</option>
       </datalist>
+
+      <h2>more inpute types</h2>
+      <h2>input type file</h2>
+      <label for="bestandUpload"></label>
+      <input type="file" id="bestandUpload" />
+
+      <h3>hiddenfields</h3>
+      &lt;type="hidden" name="category" value="jazz"&gt;
+      <input type="hidden" name="category" value="jazz" />
     </form>
+
+    <h3>Data input</h3>
+    <label for="departure">departure at</label>
+    <input type="date" id="departure" name="date" />
+
+    <h3>Range input</h3>
+    <label for="slider">volume</label>
+    <input
+      type="range"
+      id="slider"
+      value="2"
+      name="slider"
+      min="0"
+      max="100"
+      step="10"
+    />
   </body>
 </html>
