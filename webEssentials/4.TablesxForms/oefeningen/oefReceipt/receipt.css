@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
+
+table {
+  border-collapse: collapse;
+  background-color: antiquewhite;
+  border-radius: 5px;
+  padding: 30px;
+}
+/* head */
+table thead {
+  /* border-bottom: 1px dashed rgba(128, 128, 128, 0.411); */
+  text-align: left;
+  font-family: "roboto";
+  font-weight: 100;
+  color: rgba(128, 128, 128, 0.411);
+}
+
+/* table body */
+.extra {
+  font-size: 9px;
+  color: rgba(128, 128, 128, 0.411);
+}
+/* table row */
+tbody tr:first-child {
+  border-top: 1px dashed rgba(128, 128, 128, 0.411);
+}
+tbody tr:last-child {
+  border-bottom: 1px dashed rgba(128, 128, 128, 0.411);
+}
+
+/* tbody align 2nd row */
+tbody td:nth-child(2) {
+  text-align: center;
+}
+
+/* tbody align 3th row */
+tbody td:nth-child(3) {
+  text-align: right;
+}
+
+/* tfoot */
+tfoot td {
+  padding: 0px !important;
+  text-align: right;
+  color: green;
+}
+
+/* padding columns */
+/* first column */
+table th:first-child,
+table td:first-child {
+  padding-right: 50px;
+}
+/* third column */
+table th:nth-child(3),
+table td:nth-child(3) {
+  padding-left: 25px;
+}
+
+.tableContainer {
+  padding: 1rem;
+  display: inline-block;
+  background-color: rgba(255, 115, 0, 0.938);
+}
