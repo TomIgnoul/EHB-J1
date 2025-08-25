@@ -1,0 +1,72 @@
+.tableContainer {
+  display: inline-block;
+  padding: 2rem;
+  background-color: orange;
+}
+
+table {
+  background-color: bisque;
+  border-radius: 4px;
+  border-collapse: collapse;
+  padding: 30px;
+}
+
+table th,
+tfoot td {
+  text-align: left;
+  font-size: 11px;
+  font-weight: 100;
+  font-family: "robot", sans-serif;
+  color: darkgray;
+}
+
+table th {
+  text-align: left;
+}
+
+table tbody {
+  border-bottom: 1px dashed darkgray;
+  border-top: 1px dashed darkgray;
+}
+
+table td {
+  padding: 2px;
+}
+
+tfoot td {
+  padding-right: 10px !important;
+  text-align: right;
+  color: green;
+}
+
+tfood td:last-child {
+  padding-right: 0px !important;
+}
+
+/* extra's */
+tbody .extra {
+  font-size: 9px;
+  color: darkgrey;
+}
+
+/* padding and alignments */
+
+/* alignment theader */
+thead th:last-child {
+  text-align: right;
+}
+
+/* padding first row */
+td:first-child {
+  padding-right: 32px;
+}
+
+tbody td:last-child {
+  padding-left: 25px;
+}
+
+tbody td:nth-child(2n) {
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
