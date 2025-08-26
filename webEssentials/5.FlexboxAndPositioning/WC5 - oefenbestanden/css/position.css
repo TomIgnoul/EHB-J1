@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 1rem;
+}
+
+header,
+footer,
+article {
+  padding: 1rem 2rem;
+}
+
+article {
+  min-height: 150vh;
+  background-color: beige;
+  margin: 1rem 0;
+}
+
+header,
+footer {
+  background-color: tomato;
+}
+
+nav {
+  background-color: gold;
+}
+
+/* de chatlink komt onderaan rechts, en blijft altijd staan */
+#chat {
+  border: 1px solid gray;
+}
+
+/* de sharelink komt links, en srolled dan mee naar boven */
+#share {
+  background: black;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
