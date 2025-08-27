@@ -1,0 +1,17 @@
+.tooltip-container {
+  border-bottom: 1px darkgrey dashed;
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip {
+  background-color: blue;
+  border-radius: 0px 9px 9px 9px;
+  position: absolute;
+  width: 100%;
+  /* top: 2rem; */
+  /* left: 2rem; */
+  /* right: 3rem;
+  padding: 10px; */
+  /* display: none; */
+}
