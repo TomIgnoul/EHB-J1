@@ -1,0 +1,40 @@
+.movie-image {
+  position: relative;
+  height: 600px;
+  width: 900px;
+}
+
+.movie-image img {
+  width: 100%;
+  display: block;
+}
+
+.image-overlay {
+  position: absolute;
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 0, 0.3),
+    rgba(255, 255, 0, 0.1)
+  );
+
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.sterlink {
+  position: absolute;
+  display: block;
+  top: 1rem;
+  right: 1rem;
+}
+
+.sterlink a,
+.sterlink img {
+  height: 4rem;
+  display: block;
+}
+
+.sterlink:hover img {
+  filter: invert(1); /* maakt wit */
+}
