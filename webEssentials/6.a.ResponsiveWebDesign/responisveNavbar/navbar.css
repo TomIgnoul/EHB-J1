@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  display: block;
+  background-color: black;
+  color: white;
+  padding: 0.8rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+a:hover {
+  background-color: white;
+  color: black;
+}
+
+@media screen and (max-width: 640px) {
+  ul {
+    background-color: olivedrab;
+    padding: 1rem;
+    gap: 1rem;
+  }
+}
