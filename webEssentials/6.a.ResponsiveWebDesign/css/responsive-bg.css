@@ -1,0 +1,26 @@
+h1 {
+  background: url("../images/bg-s.jpg") center/cover no-repeat;
+  padding: 15vw;
+  color: white;
+  text-align: center;
+}
+
+/* Medium schermen */
+@media screen and (min-width: 801px) and (max-width: 1200px) {
+  h1 {
+    background-image: url("../images/bg-m.jpg");
+  }
+}
+
+/* Grote schermen */
+@media screen and (min-width: 1201px) and (max-width: 1600px) {
+  h1 {
+    background-image: url("../images/bg-l.jpg");
+  }
+}
+
+@media screen and (min-width: 1601px) {
+  h1 {
+    background-image: url("../images/bg-l.jpg");
+  }
+}
