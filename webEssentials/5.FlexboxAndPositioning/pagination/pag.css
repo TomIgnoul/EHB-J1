@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.paginatie {
+  /* background-color: pink; */
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  width: max-content;
+  margin: auto;
+}
+
+li {
+  /* width: 100%; */
+}
+
+li a {
+  display: block;
+  color: black;
+  /* border: 1px solid grey; */
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.active {
+  background-color: green;
+  border-radius: 50%;
+}
+
+li a:hover {
+  background-color: rgb(214, 210, 210);
+}
