@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.formContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  align-items: center;
+  gap: 0.5rem;
+}
+legend {
+  text-align: center;
+  font-size: x-large;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  padding: 2px;
+}
+
+#loginBtn {
+  width: 100%;
+  background-color: rgb(0, 110, 255);
+  color: white;
+  padding: 2px;
+}
+
+#WWvergeten {
+  text-decoration: none;
+  color: rgb(0, 110, 255);
+}
+
+#register {
+  text-align: center;
+  text-decoration: none;
+  color: rgb(0, 110, 255);
+  padding: 2px;
+  border: 2px solid rgb(0, 110, 255);
+  width: 100%;
+  border-radius: 4px;
+}
