@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic meidum", "Arial Narrow", Arial, sans-serif;
+}
+
+header {
+  margin-top: 2rem;
+  font-family: "Franklin Gothic meidum", "Arial Narrow", Arial, sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #363b41;
+  padding-left: 12rem;
+  padding-right: 12rem;
+}
+
+nav h1 {
+  padding-right: 0.3rem;
+  color: aliceblue;
+  padding: 0.3rem;
+
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+nav li {
+}
+
+nav li a {
+  color: aliceblue;
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem;
+  padding-bottom: 1rem;
+  font-size: smaller;
+  font-weight: 100;
+}
+
+main {
+  /* background-color: red; */
+  height: 100vh;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.filterContainer {
+  display: flex;
+}
+
+.filterContainer ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  flex: 1;
+}
+
+.filterContainer li:last-child {
+  margin-left: auto;
+  margin-right: 0.5rem;
+}
+
+.filterContainer li a {
+  display: block;
+  padding: 0.8rem 0.8rem 0.8rem 0.3rem;
+  text-decoration: none;
+  color: #363b41;
+}
+
+.filterContainer #searchfield {
+  border: none;
+  border-radius: 24px;
+  padding: 0.4rem;
+  padding-left: 1rem;
+  border: 1px solid #363b41;
+}
+
+.filterContainer li a:hover {
+  background: linear-gradient(to bottom, #363b41, aliceblue);
+  border-radius: 0 0 4px 4px;
+}
+
+/* content */
+
+.contentBlock {
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.imageblock {
+  display: inline-block;
+  width: 350px;
+  height: 350px;
+  flex: 0 0 350px;
+}
+
+.imageblock img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border: 1px solid rgba(128, 128, 128, 0.513);
+  border-left: none;
+  border-radius: 3px;
+}
+
+.textInfo {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: smaller;
+}
+
+.textInfo .moreinfo {
+  float: right;
+  text-decoration: none;
+}
+
+.textInfo .moreinfo a {
+  text-decoration: none;
+}
+
+.textFooter {
+  display: flex;
+  border-top: 1px solid rgba(128, 128, 128, 0.513);
+  gap: 10px;
+  margin-top: auto;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  font-size: small;
+}
+.textFooter .likes {
+  margin-left: auto;
+  margin-right: 0.5rem;
+}
