@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  padding: 15vh 1em;
+  text-align: center;
+  background-image: url(../images/bg-s.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (min-width: 801px) {
+  h1 {
+    background-image: url(../images/bg-m.jpg);
+  }
+}
+
+@media screen and (min-width: 1601px) {
+  h1 {
+    background-image: url(../images/bg-l.jpg);
+  }
+}
